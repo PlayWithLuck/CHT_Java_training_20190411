@@ -1,6 +1,17 @@
 package com.cht.training.Lab8;
 
-public class Employee {
+public class Employee implements Working { //Employee實作Working的介面，需要實作Working內的方法
+
+    @Override
+    public void startWork() {
+
+    }
+
+    @Override
+    public void endWork() {
+
+    }
+
     public int a;
     protected int b;
     int c;
@@ -11,4 +22,6 @@ public class Employee {
         System.out.println("c=" + c);
         System.out.println("d=" + d);
     }
+
+
 }
